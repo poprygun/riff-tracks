@@ -83,3 +83,9 @@ riff subscription create --channel func-cmd-replies --subscriber func-service
 
 riff service invoke func-service /func-inputs --json -- -d param -v -H "Knative-Blocking-Request:true"
 ```
+
+echo 'hi there' | http :8080/tracks
+http :8080/processTracks \
+    id=7896e496-66ce-3c1a-38e2-cad52335734d \
+    latitude=0.47105244400477986 \
+    longitude=0.2222105732192745
